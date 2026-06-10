@@ -9,6 +9,13 @@ public class FibonacciApp {
         System.out.println("The 10th term of the Fibonacci sequence is " + result + ".");
     }
 
+    /**
+     * Calculates the nth term in the Fibonacci sequence using recursion.
+     *
+     * @param n the position in the Fibonacci sequence
+     * @return the Fibonacci value at the specified position
+     */
+
     public static int fibonacci(int n) {
         if (n <= 1) {
             return n;
