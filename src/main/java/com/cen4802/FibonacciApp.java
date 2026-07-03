@@ -6,7 +6,7 @@ public class FibonacciApp {
         int term = 10;
         int result = fibonacci(term);
 
-        System.out.println("Docker test rebuild, the 10th term of the Fibonacci sequence is " + result + ".");
+        System.out.println("Dry run workflow demo, the 10th term of the Fibonacci sequence is " + result + ".");
     }
 
     /**
