@@ -26,3 +26,10 @@ out/
 .idea/
 *.class
 target/
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
