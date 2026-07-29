@@ -3,6 +3,7 @@ package com.cen4802;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class FibonacciAppTest {
 
@@ -22,10 +23,13 @@ class FibonacciAppTest {
         assertEquals(21, FibonacciApp.fibonacci(8));
     }
 
-
     @Test
     void testFibonacciTwelfthTerm() {
         assertEquals(144, FibonacciApp.fibonacci(12));
     }
 
+    @Test
+    void testFibonacciNegativeNumber() {
+        assertThrows(IllegalArgumentException.class, () -> FibonacciApp.fibonacci(-1));
+    }
 }

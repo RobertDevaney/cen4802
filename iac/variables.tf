@@ -7,5 +7,5 @@ variable "container_name" {
 variable "image_name" {
   description = "Docker image used for the Fibonacci application."
   type        = string
-  default     = "cen4802-fibonacci:monitor"
+  default     = "cen4802-fibonacci:finalproject"
 }

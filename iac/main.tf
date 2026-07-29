@@ -15,9 +15,12 @@ resource "docker_container" "fibonacci" {
   name  = var.container_name
   image = var.image_name
 
-  command = [
-    "sh",
-    "-c",
-    "while true; do java -cp app.jar com.cen4802.FibonacciApp; sleep 5; done"
+  env = [
+    "APP_VERSION=terraform-local"
   ]
+
+  ports {
+    internal = 8080
+    external = 8082
+  }
 }

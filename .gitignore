@@ -33,3 +33,6 @@ target/
 *.tfstate.*
 crash.log
 crash.*.log
+
+# Local backup files
+FibonacciApp_backup.java
